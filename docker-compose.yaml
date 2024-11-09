@@ -10,7 +10,7 @@ services:
       context: .
 
       # Specify the image name
-    image: products_api
+    image: fast_api_product
 
     # this volume is used to map the files and folders on the host to the container
     # so if we change code on the host, code in the docker container will also be changed
