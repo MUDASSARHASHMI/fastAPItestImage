@@ -18,4 +18,4 @@ class Product(Base_):
     name: Mapped[str] = mapped_column(String(30), index=True, nullable=False)
     price: Mapped[str] = mapped_column(String(30), nullable=False)
     image: Mapped[str] = mapped_column(String, nullable=False)
-    weight: Mapped[str] = mapped_column(String, nullable=False)
+    weight: Mapped[str] = mapped_column(String(30), nullable=False)
