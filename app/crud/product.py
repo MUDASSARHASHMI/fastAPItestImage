@@ -21,4 +21,4 @@ class CRUDProduct(CRUDBase[Product, ProductCreate, ProductUpdate]):
         return await super().update(db, obj_current=obj_current, obj_new=obj_new)
     async def remove(self, db: AsyncSession, *, obj_id: str) -> Product | None:
         return await super().remove(db, obj_id=obj_id)
-
+product = CRUDProduct(Product)
