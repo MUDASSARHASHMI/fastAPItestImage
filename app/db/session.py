@@ -10,6 +10,7 @@ engine = create_async_engine(
 
 # Create an AsyncSession class using sessionmaker, bound to the SQLAlchemy engine.
 # This session class will be used to interact with the database asynchronously.
-SessionLocal = sessionmaker(
-    engine, expire_on_commit=False, class_=AsyncSession
-)
+# SessionLocal = sessionmaker(engine, expire_on_commit=False, class_=AsyncSession)
+
+SessionLocal = sessionmaker(engine, expire_on_commit=False, class_=AsyncSession)
+
