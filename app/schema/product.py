@@ -13,7 +13,7 @@ class ProductCreate(ProductBase):
 class ProductUpdate(ProductBase):
     pass
 
-class ProductPathc(ProductBase):
+class ProductPatch(ProductBase):
     name: Optional[str]
     price: Optional[str]
     image: Optional[str]
